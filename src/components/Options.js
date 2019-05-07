@@ -1,32 +1,16 @@
-// import React, { useState } from "react";
+import React, { useContext } from "react";
+import OptionsContext from "../context/options-context";
 
-// const Options = props => {
-//   const [options, setOptions] = useState([]);
+const Options = () => {
+  const { dispatch } = useContext(OptionsContext);
 
-//   //   const handleRemoveAll = options => {
-//   //     return setOptions({ options: [] });
-//   //   };
+  return (
+    <>
+      <button onClick={() => dispatch({ type: "REMOVE_OPTIONS" })}>
+        Remove All
+      </button>
+    </>
+  );
+};
 
-//   // const handleRemoveAll = () => {
-//   //   console.log("handleRemoveAll clicked:", handleRemoveAll);
-//   //   window.localStorage.clear();
-//   // };
-
-//   // function clearLocalStorage() {
-//   //   window.localStorage.clear();
-//   // }
-
-//   const removeOptions = props => {
-//     setOptions([]);
-//   };
-//   return (
-//     <div>
-//       <div>
-//         <h3>Your options</h3>
-//         <button onClick={props.removeOptions}>Remove all</button>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export { Options as default };
+export { Options as default };
