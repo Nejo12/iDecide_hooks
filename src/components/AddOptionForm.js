@@ -19,12 +19,16 @@ const AddOptionForm = () => {
       {options.length < 1 && <p>Write in your option to get started!</p>}
       <h3>Add option</h3>
       <form onSubmit={addOption}>
-        <input value={text} onChange={e => setText(e.target.value)} />
+        <input
+          value={text || ""}
+          onChange={e => setText(e.target.value)}
+          type="text"
+          required
+        />
         <button>Add option</button>
       </form>
     </>
   );
 };
-// Note: dont add when empty input
 
 export { AddOptionForm as default };

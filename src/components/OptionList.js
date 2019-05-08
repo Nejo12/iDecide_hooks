@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import Option from "./Option";
+import RemoveOption from "./RemoveOption";
 import OptionsContext from "../context/options-context";
 
 const OptionList = () => {
@@ -7,8 +7,8 @@ const OptionList = () => {
 
   return (
     <div>
-      {options.map(option => (
-        <Option key={option.text} option={option} />
+      {options.map((option, index) => (
+        <RemoveOption key={option.text} option={option} count={index} />
       ))}
     </div>
   );

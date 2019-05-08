@@ -1,7 +1,7 @@
 import React, { useEffect, useContext } from "react";
 import OptionsContext from "../context/options-context";
 
-const Option = ({ option }) => {
+const RemoveOption = ({ option }) => {
   const { dispatch } = useContext(OptionsContext);
 
   useEffect(() => {
@@ -23,4 +23,4 @@ const Option = ({ option }) => {
   );
 };
 
-export { Option as default };
+export { RemoveOption as default };

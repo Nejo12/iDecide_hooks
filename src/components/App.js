@@ -4,7 +4,7 @@ import optionsReducer from "../reducers/options";
 import AddOptionForm from "./AddOptionForm";
 import OptionList from "./OptionList";
 import OptionPick from "./OptionPick";
-import Options from "./Options";
+import RemoveOptions from "./RemoveOptions";
 import Header from "./Header";
 
 const App = () => {
@@ -29,7 +29,7 @@ const App = () => {
       <Header />
       <OptionPick />
       <h1>Options...</h1>
-      <Options />
+      <RemoveOptions />
       <OptionList />
       <AddOptionForm />
     </OptionsContext.Provider>
