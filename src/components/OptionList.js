@@ -5,7 +5,13 @@ import OptionsContext from "../context/options-context";
 const OptionList = () => {
   const { options } = useContext(OptionsContext);
 
-  return options.map(option => <Option key={option.text} option={option} />);
+  return (
+    <div>
+      {options.map(option => (
+        <Option key={option.text} option={option} />
+      ))}
+    </div>
+  );
 };
 
 export { OptionList as default };

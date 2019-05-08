@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useState, useContext } from "react";
 import OptionsContext from "../context/options-context";
 
 const OptionPick = () => {
@@ -10,7 +10,11 @@ const OptionPick = () => {
     alert(option.text);
   };
 
-  return <button onClick={handlePick}>Select best choice</button>;
+  return (
+    <button disabled={!options.length} onClick={handlePick}>
+      Select best choice
+    </button>
+  );
 };
 
 export { OptionPick as default };

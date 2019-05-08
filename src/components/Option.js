@@ -12,8 +12,6 @@ const Option = ({ option }) => {
   }, []);
 
   return (
-    // Note: display disabled when option < 1
-
     <>
       <h3>{option.text}</h3>
       <button
