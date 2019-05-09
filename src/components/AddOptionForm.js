@@ -20,7 +20,7 @@ const AddOptionForm = () => {
       <h3>Add option</h3>
       <form onSubmit={addOption}>
         <input
-          value={text || ""}
+          value={text}
           onChange={e => setText(e.target.value)}
           type="text"
           required
