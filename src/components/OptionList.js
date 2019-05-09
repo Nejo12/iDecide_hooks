@@ -7,7 +7,7 @@ const OptionList = () => {
 
   return (
     <div>
-      {options.map((option, index) => (
+      {options.map(option => (
         <RemoveOption key={option.text} option={option} />
       ))}
     </div>

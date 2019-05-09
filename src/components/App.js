@@ -2,9 +2,9 @@ import React, { useEffect, useReducer } from "react";
 import OptionsContext from "../context/options-context";
 import optionsReducer from "../reducers/options";
 import AddOptionForm from "./AddOptionForm";
+import RemoveOptions from "./RemoveOptions";
 import OptionList from "./OptionList";
 import OptionPick from "./OptionPick";
-import RemoveOptions from "./RemoveOptions";
 import Header from "./Header";
 
 const App = () => {
