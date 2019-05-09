@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import RemoveOption from "./RemoveOption";
 import OptionsContext from "../context/options-context";
+import shortid from "shortid";
 
 const OptionList = () => {
   const { options } = useContext(OptionsContext);
@@ -8,7 +9,7 @@ const OptionList = () => {
   return (
     <div>
       {options.map(option => (
-        <RemoveOption key={option.text} option={option} />
+        <RemoveOption key={shortid.generate()} option={option} />
       ))}
     </div>
   );
