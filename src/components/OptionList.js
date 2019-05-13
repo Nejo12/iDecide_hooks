@@ -7,11 +7,11 @@ const OptionList = () => {
   const { options } = useContext(OptionsContext);
 
   return (
-    <div>
+    <>
       {options.map(option => (
         <RemoveOption key={shortid.generate()} option={option} />
       ))}
-    </div>
+    </>
   );
 };
 

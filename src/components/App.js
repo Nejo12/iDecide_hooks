@@ -28,7 +28,6 @@ const App = () => {
     <OptionsContext.Provider value={{ options, dispatch }}>
       <Header />
       <OptionPick />
-      <h1>Options...</h1>
       <RemoveOptions />
       <OptionList />
       <AddOptionForm />

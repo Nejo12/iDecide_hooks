@@ -12,14 +12,15 @@ const RemoveOption = ({ option }) => {
   }, []);
 
   return (
-    <>
-      <h3>{option.text}</h3>
+    <div className="optionsList">
+      <p>{option.text}</p>
       <button
+        className="deleteOption"
         onClick={() => dispatch({ type: "REMOVE_OPTION", text: option.text })}
       >
-        x
+        remove
       </button>
-    </>
+    </div>
   );
 };
 

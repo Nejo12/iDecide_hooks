@@ -15,11 +15,11 @@ const AddOptionForm = () => {
   };
 
   return (
-    <>
+    <div className="addOptionContainer">
       {options.length < 1 && <p>Write in your option to get started!</p>}
-      <h3>Add option</h3>
-      <form onSubmit={addOption}>
+      <form className="addOptionForm" onSubmit={addOption}>
         <input
+          className="addOptionInput"
           value={text}
           onChange={e => setText(e.target.value)}
           type="text"
@@ -27,7 +27,7 @@ const AddOptionForm = () => {
         />
         <button>Add option</button>
       </form>
-    </>
+    </div>
   );
 };
 

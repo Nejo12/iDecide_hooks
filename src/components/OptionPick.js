@@ -20,9 +20,15 @@ const OptionPick = () => {
   };
 
   return (
-    <button disabled={!options.length} onClick={handlePick}>
-      Select best choice
-    </button>
+    <div>
+      <button
+        className="action_btn"
+        disabled={!options.length}
+        onClick={handlePick}
+      >
+        Select best choice
+      </button>
+    </div>
   );
 };
 
