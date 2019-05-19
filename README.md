@@ -7,6 +7,6 @@
 - ES6/ES7
 - React hooks
 
-##Deployment
+## Deployment
 
-- App Deployment using [GitHub](https://nejo12.github.io/iDecide_hooks/)
+- App Deployment on [GitHub](https://nejo12.github.io/iDecide_hooks/)
