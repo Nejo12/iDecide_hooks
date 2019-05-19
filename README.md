@@ -9,7 +9,7 @@
 
 ## Demo
 
-![Demo of iDecide](/public/screen.gif)
+![Demo](public/screen.gif)
 
 ## Deployment
 
