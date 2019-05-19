@@ -7,6 +7,10 @@
 - ES6/ES7
 - React hooks
 
+## Demo
+
+![Demo of iDecide](./public/screen.mov)
+
 ## Deployment
 
 - App Deployment on [GitHub](https://nejo12.github.io/iDecide_hooks/)
