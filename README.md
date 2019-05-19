@@ -9,7 +9,7 @@
 
 ## Demo
 
-![Demo](public/screen.gif)
+![Demo](/public/screen.gif)
 
 ## Deployment
 
