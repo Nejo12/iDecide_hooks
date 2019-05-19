@@ -9,7 +9,7 @@
 
 ## Demo
 
-![Demo of iDecide](./public/screen.mov)
+![Demo of iDecide](/public/screen.mov)
 
 ## Deployment
 
