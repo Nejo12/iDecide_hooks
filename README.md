@@ -13,4 +13,4 @@
 
 ## Deployment
 
-- App Deployment on [GitHub](https://nejo12.github.io/iDecide_hooks/)
+- App Deployment on GitHub
